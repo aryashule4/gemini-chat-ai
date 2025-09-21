@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gemini Chat</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width:720px; margin:2rem auto; }
+    #chat { border:1px solid #ddd; padding:1rem; height:60vh; overflow:auto; background:#fafafa; }
+    .msg { margin:.6rem 0; padding:.6rem .8rem; border-radius:8px; max-width:80%; }
+    .user { background:#c8f7dc; align-self:flex-end; margin-left:auto; text-align:right; }
+    .bot { background:#eee; text-align:left; }
+    #composer { display:flex; gap:.5rem; margin-top:.8rem; }
+    textarea { flex:1; height:60px; padding:.6rem; }
+    button { padding:.6rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Gemini Chat</h1>
+  <div id="chat" aria-live="polite"></div>
+
+  <div id="composer">
+    <textarea id="prompt" placeholder="Tulis pertanyaan..."></textarea>
+    <button id="send">Kirim</button>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
